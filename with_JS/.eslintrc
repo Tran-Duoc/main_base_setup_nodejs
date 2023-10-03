@@ -1,0 +1,26 @@
+{
+  "root": true,
+  "plugins": ["prettier", "simple-import-sort", "import"],
+  "extends": ["eslint:recommended", "eslint-config-prettier", "prettier"],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "prettier/prettier": [
+      "warn",
+      {
+        "arrowParens": "always",
+        "semi": false,
+        "trailingComma": "none",
+        "tabWidth": 2,
+        "endOfLine": "auto",
+        "useTabs": false,
+        "singleQuote": true,
+        "printWidth": 120,
+        "jsxSingleQuote": true
+      }
+    ]
+  }
+}
